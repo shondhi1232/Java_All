@@ -15,7 +15,7 @@ public class Find_3rd_highest_salary {
 
         int max =Integer.MIN_VALUE;
         int min=Integer.MAX_VALUE;
-        int mid=0;
+        int max3rd=0;
         //int search=0;
 
         for( int i=0; i<array.length;i++){
@@ -30,10 +30,10 @@ public class Find_3rd_highest_salary {
                 min = array[i];
             }
             if(max>array[i] && min<array[i]){
-                mid = array[i];
+                max3rd = array[i];
             }
         }
-        System.out.println(mid);
+        System.out.println(max3rd);
     }
 
 }
