@@ -12,18 +12,39 @@ import java.util.Scanner;
 public class search_Item {
 
     public static void main(String[] args) {
-        Scanner find  = new Scanner(System.in);
-        ArrayList bazaar = new ArrayList();
 
-        HashMap hash_list = new HashMap();
+        Scanner find  = new Scanner(System.in);
+
+
+
+        ArrayList bazaarItem = new ArrayList();
+        bazaarItem.add("sunflower oil");
+        bazaarItem.add("olive oil");
+        bazaarItem.add("papaya");
+        bazaarItem.add("nuts");
+        bazaarItem.add("fruit");
+        bazaarItem.add("meat");
+        bazaarItem.add("chicken");
+
+        ArrayList price = new ArrayList();
+
+        //hash_list.put(bazaarItem,"sauce");
+        //hash_list.get(bazaarItem);
+
+
 
         System.out.println("Enter item name: ");
         String item = find.next();
+        System.out.println();
+
 
     }
 
 
     public static void searchItem(String item){
+        HashMap hash_list = new HashMap();
+
+
 
     }
     public int  totalSum(ArrayList bazaar ,int price){
