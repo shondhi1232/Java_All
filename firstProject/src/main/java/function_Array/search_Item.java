@@ -5,7 +5,6 @@
 
 package function_Array;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -15,39 +14,30 @@ public class search_Item {
 
         Scanner find  = new Scanner(System.in);
 
-
-
-        ArrayList bazaarItem = new ArrayList();
-        bazaarItem.add("sunflower oil");
-        bazaarItem.add("olive oil");
-        bazaarItem.add("papaya");
-        bazaarItem.add("nuts");
-        bazaarItem.add("fruit");
-        bazaarItem.add("meat");
-        bazaarItem.add("chicken");
-
-        ArrayList price = new ArrayList();
-
-        //hash_list.put(bazaarItem,"sauce");
-        //hash_list.get(bazaarItem);
-
-
+        HashMap bazaar_list = new HashMap();
+        bazaar_list.put("sunflower oil",1280);
+        bazaar_list.put("olive oil",880);
+        bazaar_list.put("papaya",120);
+        bazaar_list.put("nuts",200);
+        bazaar_list.put("fruit",500);
+        bazaar_list.put("meat",600);
+        bazaar_list.put("chicken",260);
 
         System.out.println("Enter item name: ");
         String item = find.next();
         System.out.println();
 
+        searchItem(item);
+        //totalSum(bazaar_list,searchItem(item));
 
     }
 
-
-    public static void searchItem(String item){
-        HashMap hash_list = new HashMap();
-
-
-
+    public static int searchItem(String item){
+        
+        int price = 0;
+        return price;
     }
-    public int  totalSum(ArrayList bazaar ,int price){
+    public static int  totalSum(HashMap bazaar ,int price){
         int total_price=0;
        for (int i=0;i<bazaar.size();i++) {
             total_price +=price;
