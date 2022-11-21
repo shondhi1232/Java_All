@@ -1,6 +1,6 @@
-/firstProject/build.gradle
-/firstProject/gradlew
-/firstProject/gradlew.bat
-/firstProject/settings.gradle
-/firstProject/.idea
-/firstProject/.gradle
+build.gradle
+gradlew
+gradlew.bat
+settings.gradle
+.idea
+.gradle
