@@ -1,7 +1,7 @@
-build.gradle
-gradlew
-gradlew.bat
-settings.gradle
-.idea
-.gradle
+/firstProject/build.gradle
+/firstProject/gradlew
+/firstProject/gradlew.bat
+/firstProject/settings.gradle
+/firstProject/.gradle
 /firstProject/src/main/java/Practice/firstProject/src/main/java/Practice/firstProject/src/main/java/Practice
+/firstProject/.idea
