@@ -14,7 +14,27 @@ public class search_Item {
 
         Scanner find  = new Scanner(System.in);
 
-        HashMap bazaar_list = new HashMap();
+        System.out.println("Enter item name: ");
+        String item = find.next();
+        System.out.println();
+
+        //searchItem method call
+        int n = searchItem(item);
+        if(n!=0) {
+            System.out.println(searchItem(item));
+        }
+        else {
+            System.out.println("No item found");
+        }
+
+        // totalSum method call
+        System.out.println("Total price of item is :"+totalSum());
+
+    }
+
+    public static HashMap ItemList(){
+
+        HashMap<String, Integer> bazaar_list = new HashMap<String, Integer>();
         bazaar_list.put("sunflower oil",1280);
         bazaar_list.put("olive oil",880);
         bazaar_list.put("papaya",120);
@@ -22,26 +42,29 @@ public class search_Item {
         bazaar_list.put("fruit",500);
         bazaar_list.put("meat",600);
         bazaar_list.put("chicken",260);
-
-        System.out.println("Enter item name: ");
-        String item = find.next();
-        System.out.println();
-
-        searchItem(item);
-        //totalSum(bazaar_list,searchItem(item));
-
+        return bazaar_list;
     }
 
     public static int searchItem(String item){
-        
+        HashMap bazaar = ItemList();
         int price = 0;
+        for (Object key : bazaar.keySet()) {
+            if (key.equals(item)) {
+                price = (int)bazaar.get(key);
+
+                //return "Item price : " + price + "tk";
+            }
+        }
         return price;
     }
-    public static int  totalSum(HashMap bazaar ,int price){
+    public static int  totalSum(){
+        HashMap bazaar = ItemList();
         int total_price=0;
-       for (int i=0;i<bazaar.size();i++) {
-            total_price +=price;
-       }
+
+        for (Object key : bazaar.keySet()){
+            total_price +=(int)bazaar.get(key);
+
+        }
         return total_price;
     }
 }
