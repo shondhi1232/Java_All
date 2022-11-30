@@ -1,0 +1,10 @@
+{
+  "Department": "Software engineering",
+  "Address": {
+    "Thana": "Dhanmondi",
+    "Area": "Dhaka",
+    "House no.": "RA"
+  },
+  "PhoneNumber": "00289378",
+  "Name": "Shondhi"
+}
